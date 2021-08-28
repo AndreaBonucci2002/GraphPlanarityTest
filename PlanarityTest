@@ -1,0 +1,13 @@
+n = input("How many vertices?")
+q = input('How  many edges?')
+r = input('How many regions?')
+
+
+def planaritytest(a, b, c):
+    if a - b + c == 2:
+        return 'The graph is planar!'
+    else:
+        return 'The graph is not planar.'
+
+
+print(planaritytest(int(n), int(q), int(r)))
